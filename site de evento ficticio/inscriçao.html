@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Inscrição do Torneio</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <img src="css/img/pngfodase.png" class="logo">
+    <h1 class="t1"> Insira seus dados:</h1>
+    <div class="d1">
+        <div class="center">
+        <form id="cadastro1"><br>
+            <label for="nome">Insira seu nome completo: </label><br>
+            <input type="text" id="nome" required><br><br>
+            <label for="steam">Insira seu Perfil Steam: </label><br>
+            <input type="text" id="steam" required><br><br>
+            <label for="cpf">Insira seu CPF: </label><br>
+            <input type="text" id="cpf" required OnKeyPress="formatar('###.###.###-##',this)" maxlength="14"><br><br>
+            <label for="nasc">Insira sua Data de Nascimento: </label><br>
+            <input type="date" id="nasc" required><br><br>
+            <label for="email" class="email">Insira seu Email: </label><br>
+            <input type="email" id="email" required> <br><br>
+            <label for="equipe">Insira o nome da sua Equipe:</label><br>
+            <input type="text" id="equipe" required><br><br>
+            <label for="telefone">Insira o seu número de Telefone:</label><br>
+            <input type="tel" maxlength="15" required OnKeyPress="formatar('(##) #####-####',this)" id="telefone"><br><br>
+            <input type="checkbox" required id="regras"><p class="p1"> Você concorda com as Regras e Regulamentos do Torneio.</p><br><br>
+            <input type="submit" value="Enviar" class="b1">
+        </form>
+        </div>
+    </div>
+    <script>
+
+        function formatar(mascara, documento) {
+            let i = documento.value.length;
+            let saida = '#';
+            let texto = mascara.substring(i);
+            while (texto.substring(0, 1) != saida && texto.length) {
+                documento.value += texto.substring(0, 1);
+                i++;
+                texto = mascara.substring(i);
+            }
+        }
+
+
+        document.getElementById('cadastro1').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Obter os valores do formulário
+            var email = document.getElementById('email').value;
+            var nome = document.getElementById('senha').value;
+            var steam = document.getElementById('steam').value;
+            var cpf = document.getElementById('cpf').value;
+            var nasc = document.getElementById('nasc').value;
+            var equipe = document.getElementById('equipe').value;
+            var telefone = document.getElementById('telefone').value;
+            var checkbox = document.getElementById('regras').value;
+
+            // Salvar os dados em algum lugar (por exemplo, enviar para um servidor)
+            // Aqui você pode adicionar a lógica para salvar os dados do cadastro.
+
+            // Redirecionar para outra página com mais instruções de cadastro
+            window.location.href = 'fim.html';
+        });
+
+        document.getElementById('cadastro1').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        console.log("Form submitted!");
+
+        // Rest of your code for processing the form data and redirection.
+
+        window.location.href = 'fim.html';
+    });
+
+    </script>
+
+</body>
+
+</html>

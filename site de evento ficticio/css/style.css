@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'verminvibes1989', sans-serif;
+    src: url('Vermin-Vibes-1989.ttf') format('truetype');
+}
+
+body {
+    background-image: url(img/background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: black;
+    color: white;
+}
+
+nav,
+.menu {
+    list-style-type: none;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: rgb(236, 201, 0);
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+a {
+    color: rgb(102, 56, 4);
+    text-decoration: none;
+}
+
+.t1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+h2,
+h3,
+.t3 {
+    font-family: sans-serif;
+    color: rgb(102, 56, 4);
+    text-align: center;
+}
+
+.p1 {
+    font-family: sans-serif;
+    color: rgb(102, 56, 4);
+}
+
+.d1,
+.d2,
+.d3 {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(236, 201, 0);
+    justify-content: center;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding-top: 1px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: rgb(102, 56, 4);
+    text-align: center;
+}
+
+ul,
+li {
+    font-family: sans-serif;
+    list-style-type: none;
+    color: rgb(102, 56, 4);
+    text-align: center;
+    padding-right: 21px;
+}
+
+.t3, .t4 {
+    font-family: sans-serif;
+    color: rgb(102, 56, 4);
+    text-align: center;
+}
+
+.proplayer {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: flex;
+}
+
+input[type=email], [type=date], [type=text], [type=tel],  select {
+    display: flex;
+    width: 95%;
+    padding: 10px 20px;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(102, 56, 4);
+}
+
+.b1 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.b1:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.p1 {
+    display: inline;
+}
+
+.dfim {
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(236, 201, 0);
+    justify-content: center;
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 25px;
+}
+
+.retorno {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgb(102, 56, 4);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.retorno:hover {
+    background-color: rgb(54, 31, 4);
+}
+
+.registro {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.registro:hover {
+    background-color: rgb(65, 65, 65);
+}

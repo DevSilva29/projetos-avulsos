@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro Concluido!</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <img src="css/img/pngfodase.png" class="logo">
+    <h1 class="t1">Cadastro Concluído!</h1><br><br><br>
+    <div class="dfim">
+    <p class="p1">Seu cadastro foi concluído com sucesso, Boa Sorte e bons jogos!</p>
+    </div><br>
+    <button id="retorno" class="retorno">Voltar para a página inicial</button>
+    <script>
+    var botao = document.getElementById("retorno");
+        
+    botao.addEventListener("click", function() {
+            var urlDestino = "index.html";
+
+            window.location.href = urlDestino;
+    });
+    </script>
+</body>
+</html>
